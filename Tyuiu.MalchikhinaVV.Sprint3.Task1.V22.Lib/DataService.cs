@@ -15,9 +15,10 @@ namespace Tyuiu.MalchikhinaVV.Sprint3.Task1.V22.Lib
 
             while (startValue <= stopValue)
             {
-                sumSeries = sumSeries + ((Math.Pow(value, startValue) + (1/2)) * Math.Cos(startValue));
+                sumSeries = sumSeries + (Math.Pow(value, startValue) + 0.5) * Math.Cos(startValue);
                 startValue++;
             }
+            
             return Math.Round(sumSeries, 3);
         }
     }
