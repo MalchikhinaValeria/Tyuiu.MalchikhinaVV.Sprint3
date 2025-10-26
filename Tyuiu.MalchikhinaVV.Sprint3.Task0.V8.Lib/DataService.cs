@@ -15,9 +15,8 @@ namespace Tyuiu.MalchikhinaVV.Sprint3.Task0.V8.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                mulSeries = mulSeries * (Math.Pow(value, i) + 1);
+                mulSeries = mulSeries * ((Math.Pow(value, i) + 1) * Math.Cos(4));
             }
-            mulSeries = mulSeries * Math.Cos(4);
             return Math.Round(mulSeries, 3);
         }
     }
